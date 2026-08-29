@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="ToolNest - Free online calculators and useful tools">
+<title>ToolNest USA - Free Online Tools</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{background:#101827;color:white;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;font-weight:bold}.logo span{color:#60a5fa}
+nav a{color:white;text-decoration:none;margin-left:20px}
+.hero{background:linear-gradient(135deg,#101827,#2563eb);color:white;text-align:center;padding:65px 20px}
+.hero h1{font-size:44px;margin-bottom:12px}.hero p{color:#dbeafe;max-width:650px;margin:auto}
+.search{max-width:600px;margin:25px auto 0;display:flex}
+.search input{flex:1;padding:15px;border:0;border-radius:10px 0 0 10px;font-size:16px;outline:0}
+.search button{padding:15px 22px;border:0;background:#60a5fa;font-weight:bold;border-radius:0 10px 10px 0}
+.container{max-width:1100px;margin:auto;padding:45px 20px}
+.title{text-align:center;margin-bottom:30px}.title h2{font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:24px;box-shadow:0 5px 20px #0000000d}
+.icon{font-size:35px;margin-bottom:10px}.card h3{margin-bottom:8px}.card p{color:#667085;font-size:14px}
+input,textarea{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;margin:6px 0;font-size:15px}
+button.action{background:#2563eb;color:white;border:0;padding:11px 16px;border-radius:8px;cursor:pointer;margin-top:5px}
+.result{margin-top:12px;padding:12px;background:#eff6ff;border-radius:8px;font-weight:bold}
+.adbox{margin:35px 0;padding:25px;background:white;border:1px dashed #94a3b8;border-radius:12px;text-align:center;color:#64748b}
+.info{background:#101827;color:white;border-radius:18px;padding:30px;margin-top:30px}.info p{color:#d1d5db;margin-top:8px}
+footer{background:#0b1120;color:#9ca3af;text-align:center;padding:30px}
+.hidden{display:none}
+@media(max-width:600px){
+.hero h1{font-size:32px}nav{display:none}
+.search{flex-direction:column}
+.search input,.search button{border-radius:8px;margin:4px 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Tool<span>Nest</span> 🇺🇸</div>
+<nav>
+<a href="#tools">Tools</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Free Online Tools</h1>
+<p>Simple, fast and free tools for calculations and everyday online tasks.</p>
+
+<div class="search">
+<input id="search" placeholder="Search a tool..." onkeyup="searchTools()">
+<button onclick="searchTools()">Search</button>
+</div>
+</section>
+
+<main class="container">
+
+<div class="title">
+<h2 id="tools">Popular Free Tools</h2>
+</div>
+
+<div class="grid">
+
+<div class="card tool-card">
+<div class="icon">📊</div>
+<h3>Percentage Calculator</h3>
+<p>Calculate percentages instantly.</p>
+<input id="num1" type="number" placeholder="Enter number">
+<input id="num2" type="number" placeholder
